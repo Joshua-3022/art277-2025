@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Me - My Website</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #fafafa;
+        }
+
+        /* Header */
+        .header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .header a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .header a:hover {
+            text-decoration: underline;
+        }
+
+        /* Container */
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 50px 20px;
+        }
+
+        h1, h2 {
+            text-align: center;
+        }
+
+        /* Contact Layout */
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            margin-bottom: 60px;
+        }
+
+        /* Form */
+        .contact-form {
+            background-color: #f4f4f4;
+            padding: 30px;
+            border-radius: 10px;
+        }
+
+        .contact-form label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        .contact-form input:focus,
+        .contact-form textarea:focus {
+            outline: none;
+            border-color: #4CAF50;
+        }
+
+        .contact-form button {
+            background-color: #333;
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
+
+        .contact-form button:hover {
+            background-color: #4CAF50;
+        }
+
+        /* Map / Info */
+        .map-box {
+            background-color: #f4f4f4;
+            padding: 30px;
+            border-radius: 10px;
+        }
+
+        .map-box iframe {
+            width: 100%;
+            height: 350px;
+            border: none;
+            border-radius: 6px;
+        }
+
+        /* FAQ */
+        .faq {
+            background-color: #f4f4f4;
+            padding: 40px;
+            border-radius: 10px;
+        }
+
+        .faq-item {
+            margin-bottom: 25px;
+        }
+
+        /* Footer */
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <div class="header">
+        <h1>My Website</h1>
+        <div>
+            <a href="index.html">Home</a> |
+            <a href="about.html">About Me</a> |
+            <a href="favorites.html">My Favorites</a> |
+            <a href="portfolio.html">Portfolio</a> |
+            <a href="contact.html">Contact Me</a>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container">
+        <h1>Contact Me</h1>
+
+        <div style="text-align:center; margin-bottom:40px;">
+            <h2>Get In Touch</h2>
+            <p style="font-size:18px; line-height:1.6;">
+                I’m always open to new opportunities, collaborations, and creative ideas.
+                If you’d like to work together or have any questions, feel free to reach out.
+            </p>
+        </div>
+
+        <!-- Contact Section -->
+        <div class="contact-grid">
+
+            <!-- Form -->
+            <div>
+                <h3>Send Me a Message</h3>
+                <div class="contact-form">
+                    <form>
+                        <label>Full Name</label>
+                        <input type="text" placeholder="Enter your full name" required>
+
+                        <label>Email Address</label>
+                        <input type="email" placeholder="Enter your email address" required>
+
+                        <label>Subject</label>
+                        <input type="text" placeholder="What is this about?">
+
+                        <label>Message</label>
+                        <textarea rows="5" placeholder="Type your message here..." required></textarea>
+
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Contact Info -->
+            <div>
+                <h3>Contact Information</h3>
+                <div class="map-box">
+                    <iframe 
+                        src="https://www.google.com/maps?q=Monrovia+Liberia&output=embed"
+                        loading="lazy">
+                    </iframe>
+
+                    <p><strong>Name:</strong> Joshua C Doe</p>
+                    <p><strong>Email:</strong> lbelucas30@gmail.com</p>
+                    <p><strong>Phone:</strong> 0774757849</p>
+                    <p><strong>Location:</strong> Monrovia, Liberia</p>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- FAQ -->
+        <div class="faq">
+            <h2>Frequently Asked Questions</h2>
+
+            <div class="faq-item">
+                <h3>How soon will I get a response?</h3>
+                <p>I usually respond within 24–48 hours.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Are you available for freelance work?</h3>
+                <p>Yes, I’m open to freelance and contract-based projects.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Do you offer consultations?</h3>
+                <p>Yes, I offer a free initial consultation to discuss project ideas.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>&copy; 2023 Joshua C Doe. All rights reserved.</p>
+    </div>
+
+</body>
+</html>
